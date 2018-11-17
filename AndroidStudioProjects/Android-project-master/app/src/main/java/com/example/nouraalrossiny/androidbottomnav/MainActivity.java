@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this);
         if (available == ConnectionResult.SUCCESS) {
             //everything is fine and the user can make map requests
-            Log.d(TAG, "isServicesOK: Google Play Services working");
+            Log.d(TAG, "isServicesOK: Google Play Services working ");
             return true;
         } else if (GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
             //an error occured but we can resolve it
